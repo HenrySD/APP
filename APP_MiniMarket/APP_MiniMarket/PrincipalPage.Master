@@ -13,7 +13,7 @@
 
     <link href="Boostrap/bootstrap.min.css" rel="stylesheet" />
     <link href="Css/sb-admin-2.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" />
+    <link rel="stylesheet" href="Font/all.css" type="text/css" />
 
      <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -86,77 +86,90 @@
                             <ul class="nav" id="side-menu">
 
                                 <li>
-                                    <a href="#"><i class="fa fa-stream fa-fw"></i>  Inicio</a>
+                                    <a href="Home.aspx"><i class="fa fa-stream fa-fw"></i>  Inicio</a>
                                 </li>
                                 <li>
-                                    <a href="AgregarProducto.aspx"><i class="fa fa-plus fa-fw"></i>  Agregar Producto</a>
+                                    <a href="#"><i class="fa fa-plus fa-fw"></i>  Consultas<span class="fa arrow"></span></a>
+                                     <ul class="nav nav-second-level">
+                                        <li>
+                                            <a href="#">  Reportes de Ventas</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">  Compras Productos</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">  Ganacias</a>
+                                        </li>
+                                          <li>
+                                            <a href="#">  Usuarios Activos</a>
+                                        </li>
+                                         <li>
+                                             <a href="#">  Productos Proximos a Vencer</a>
+                                         </li>
+                                         <li>
+                                             <a href="#">  Productos Vencidos</a>
+                                         </li>
+                                       
+                                    </ul>
+                                   
+                                </li>
+                                <li>
+                                  
+                                    <a href="#"><i class="fa fa-table fa-fw"></i>  Usuario<span class="fa arrow"></span></a>
+                                     <ul class="nav nav-second-level">
+                                        <li>
+                                            <a href="#">  Registrar Nuevo Usuario</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">  Recuperar Password</a>
+                                        </li>
+                                        
+                                       
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-edit fa-fw"></i>  Productos<span class="fa arrow"></span></a>
+                                    <ul class="nav nav-second-level">
+                                        <li>
+                                            <a href="AgregarProducto.aspx">  Ingresar Nuevos Productos</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">  Editar Productos</a>
+                                        </li>
+                                       
+                                       
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-wrench fa-fw"></i>  Ventas<span class="fa arrow"></span></a>
+                                    <ul class="nav nav-second-level">
+                                        <li>
+                                            <a href="#">  Control Diario de Ventas</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">  Control de Ventas</a>
+                                        </li>
+                                       
+                                    </ul>
                                     
-                                    <!-- /.nav-second-level -->
                                 </li>
                                 <li>
-                                    <a href="#"><i class="fa fa-table fa-fw"></i>  Tablas</a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fa fa-edit fa-fw"></i>  Formularios</a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fa fa-wrench fa-fw"></i>  Elementos<span class="fa arrow"></span></a>
+                                    <a href="#"><i class="fa fa-sitemap fa-fw"></i>  Proveedores<span class="fa arrow"></span></a>
                                     <ul class="nav nav-second-level">
                                         <li>
-                                            <a href="#">  Panels and Wells</a>
+                                            <a href="#">  Listado Proveedores</a>
                                         </li>
                                         <li>
-                                            <a href="#">  Buttons</a>
+                                            <a href="#">  Editar Proveedores</a>
                                         </li>
                                         <li>
-                                            <a href="#">  Notifications</a>
+                                            <a href="#">  Agregar Proveedores</a>
                                         </li>
-                                        <li>
-                                            <a href="#">  Typography</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">  Icons</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">  Grid</a>
-                                        </li>
+                                        
                                     </ul>
                                     <!-- /.nav-second-level -->
                                 </li>
-                                <li>
-                                    <a href="#"><i class="fa fa-sitemap fa-fw"></i>  Otro menu<span class="fa arrow"></span></a>
-                                    <ul class="nav nav-second-level">
-                                        <li>
-                                            <a href="#">  Second Level Item</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">  Second Level Item</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Third Level <span class="fa arrow"></span></a>
-                                            <ul class="nav nav-third-level">
-                                                <li>
-                                                    <a href="#">  Third Level Item</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">  Third Level Item</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">  Third Level Item</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">  Third Level Item</a>
-                                                </li>
-                                            </ul>
-                                            <!-- /.nav-third-level -->
-                                        </li>
-                                    </ul>
-                                    <!-- /.nav-second-level -->
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fa fa-files-o fa-fw"></i>  Otro menu<span class="fa arrow"></span></a>
-
-                                </li>
+                               
                             </ul>
                         </div>
                         <!-- /.sidebar-collapse -->

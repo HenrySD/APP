@@ -24,6 +24,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -94,8 +95,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Font\font-awesome.css" />
-    <Content Include="Font\font-awesome.min.css" />
+    <Content Include="Font\all.css" />
     <Content Include="Js\bootstrap.min.js" />
     <Content Include="Js\jquery.min.js" />
     <Content Include="Js\metisMenu.min.js" />
@@ -106,12 +106,27 @@
     </Content>
     <Content Include="Pages\AgregarProducto.aspx" />
     <Content Include="PrincipalPage.Master" />
+    <Content Include="Font\webfonts\fa-brands-400.svg" />
+    <Content Include="Font\webfonts\fa-regular-400.svg" />
+    <Content Include="Font\webfonts\fa-solid-900.svg" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="Font\webfonts\fa-brands-400.eot" />
+    <Content Include="Font\webfonts\fa-brands-400.ttf" />
+    <Content Include="Font\webfonts\fa-brands-400.woff" />
+    <Content Include="Font\webfonts\fa-brands-400.woff2" />
+    <Content Include="Font\webfonts\fa-regular-400.eot" />
+    <Content Include="Font\webfonts\fa-regular-400.ttf" />
+    <Content Include="Font\webfonts\fa-regular-400.woff" />
+    <Content Include="Font\webfonts\fa-regular-400.woff2" />
+    <Content Include="Font\webfonts\fa-solid-900.eot" />
+    <Content Include="Font\webfonts\fa-solid-900.ttf" />
+    <Content Include="Font\webfonts\fa-solid-900.woff" />
+    <Content Include="Font\webfonts\fa-solid-900.woff2" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Boostrap\bootstrap.css" />
