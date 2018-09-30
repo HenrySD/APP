@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 <html lang="en">
-<head runat="server" class="bg-black">
+<head runat="server">
     <%--<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />--%>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,6 +26,8 @@
             height:100%;
             margin-top:-40%;
         }
+
+        
         
 
 
