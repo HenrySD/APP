@@ -13,13 +13,6 @@
 
     <form id="form1" runat="server">
         <div style="margin: 14% 30% 14% 30%;" >
-           
-
-           
-
-
-
-
             <div class="form-group">
                 <label for="exampleInputEmail1">Usuario</label>
                 <asp:TextBox ID="txtUsuario" runat="server" CssClass="form-control" placeholder="Ingrese su usuario"></asp:TextBox>
@@ -27,10 +20,10 @@
             </div>
             <div class="form-group">
                 <label for="exampleInputPassword1">Contraseña</label>
-                <asp:TextBox ID="txtContra" CssClass="form-control" placeholder="Ingrese contrasena" runat="server"></asp:TextBox>
+                <asp:TextBox ID="txtContra" CssClass="form-control" placeholder="Ingrese contrasena" runat="server" TextMode="Password"></asp:TextBox>
 
             </div>
-            <asp:Button class="btn btn-primary" ID="btnAcceder" runat="server" Text="Acceder" OnClick="btnAcceder_Click" />
+            <asp:Button class="btn btn-primary" ID="btnAcceder" runat="server" Text="Acceder" OnClick="btnAcceder_Click" style="height: 31px" />
         </div>
     </form>
 </body>

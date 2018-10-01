@@ -4,6 +4,9 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data.SqlClient;
+using System.Data;
+
 
 namespace APP_MiniMarket
 {
@@ -16,33 +19,33 @@ namespace APP_MiniMarket
 
         protected void btnAcceder_Click(object sender, EventArgs e)
         {
-
-            string passAdmin = "admin";
-            string userAdmin = "admin";
-            string passCaj = "cajero1";
-            string userCaj = "cajero1";
-
-            //login del administrador
-            if (txtUsuario.Text == userAdmin && txtContra.Text == passAdmin)
+            try
             {
+
+                DataSet1TableAdapters.UsuariosTableAdapter obj = new DataSet1TableAdapters.UsuariosTableAdapter();
+                String userPass = obj.login(txtUsuario.Text, txtContra.Text);
+                if (userPass != null)
+                {
+                    Session["Correo"] = userPass;
+                    Response.Redirect("Pages/Home.aspx");
+
+                }
+                else
+                {
+                    Response.Write("<script>alert('Usuario incorrecto')</script>");
                 
-                Response.Write("<script> window.open('Pages/Home.aspx','_parent'); window.close(); </script>");
+                }
 
             }
+            catch {
 
-            // login del cajero
-            else if (txtUsuario.Text==userCaj && txtContra.Text==passCaj)
-            {
-                Response.Write("<script> window.open('Pages/Cajero.aspx','_parent'); window.close(); </script>");
+
+
             }
-            else
-            {
-                Response.Write("<script> alert('No esta registrado'); </script>");
-            }
-
-
-
-
+                
+               
+            
+          
 
         }
     }
