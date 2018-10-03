@@ -24,10 +24,26 @@ namespace APP_MiniMarket
                 String userPass = obj.login(txtUsuario.Text, txtContra.Text);
                 if (userPass != null)
                 {
-                    Session["Correo"] = userPass;
-                    Response.Redirect("Pages/Home.aspx");
+
+                    if (userPass == obj.login(txtUsuario.Text, txtContra.Text))
+                    {
+                        Session["Usuario"] = userPass;
+                        Response.Redirect("Pages/Home.aspx");
+
+                    }
+                    else  if(userPass == obj.login(txtUsuario.Text, txtContra.Text)){
+
+                        Session["Usuario1"] = userPass;
+                        Response.Redirect("Pages/Cajero.aspx");
+
+
+                    }
+
+
+
 
                 }
+                
                 else
                 {
                     Response.Write("<script>alert('Usuario incorrecto')</script>");
