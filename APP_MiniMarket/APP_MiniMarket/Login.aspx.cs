@@ -48,5 +48,33 @@ namespace APP_MiniMarket
           
 
         }
+
+        protected void btnAceptar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                DataSet1TableAdapters.UsuariosTableAdapter obj = new DataSet1TableAdapters.UsuariosTableAdapter();
+                String userPass = obj.login(txtUsuario.Text, txtContra.Text);
+                if (userPass != null)
+                {
+                    Session["Correo"] = userPass;
+                    Response.Redirect("Pages/Home.aspx");
+
+                }
+                else
+                {
+                    Response.Write("<script>alert('Usuario incorrecto')</script>");
+
+                }
+
+            }
+            catch
+            {
+
+
+
+            }
+        }
     }
 }

@@ -12,6 +12,7 @@
     <title>Pagina Principal</title>
 
     <link href="Boostrap/bootstrap.min.css" rel="stylesheet" />
+    
     <link href="Css/sb-admin-2.css" rel="stylesheet" />
     <link rel="stylesheet" href="Font/all.css" type="text/css" />
 

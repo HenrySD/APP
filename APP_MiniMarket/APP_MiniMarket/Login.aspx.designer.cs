@@ -13,13 +13,13 @@ namespace APP_MiniMarket {
     public partial class Login {
         
         /// <summary>
-        /// Control form1.
+        /// Control validar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.HtmlControls.HtmlForm validar;
         
         /// <summary>
         /// Control txtUsuario.
@@ -40,12 +40,12 @@ namespace APP_MiniMarket {
         protected global::System.Web.UI.WebControls.TextBox txtContra;
         
         /// <summary>
-        /// Control btnAcceder.
+        /// Control btnAceptar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAcceder;
+        protected global::System.Web.UI.WebControls.Button btnAceptar;
     }
 }

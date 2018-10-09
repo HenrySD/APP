@@ -97,6 +97,8 @@
   <ItemGroup>
     <Content Include="Font\all.css" />
     <Content Include="Js\bootstrap.min.js" />
+    <Content Include="Js\FuncionValidar.js" />
+    <Content Include="Js\jquery-3.3.1.min.js" />
     <Content Include="Js\jquery.min.js" />
     <Content Include="Js\metisMenu.min.js" />
     <Content Include="Js\sb-admin-2.js" />
