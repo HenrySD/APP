@@ -120,7 +120,7 @@
                                     <a href="#"><i class="fa fa-table fa-fw"></i>  Usuario<span class="fa arrow"></span></a>
                                      <ul class="nav nav-second-level">
                                         <li>
-                                            <a href="#">  Registrar Nuevo Usuario</a>
+                                            <a href="RegistrarNuevoUsuario.aspx">  Registrar Nuevo Usuario</a>
                                         </li>
                                         <li>
                                             <a href="#">  Recuperar Password</a>
