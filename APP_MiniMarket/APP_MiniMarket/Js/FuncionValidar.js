@@ -12,3 +12,16 @@
         }, false);
     }, false);
 })();
+
+
+
+function isNumberOrLetter(event) {
+
+    var charCode = (event.which) ? event.which : event.keyCode;
+
+    if ((charCode > 96 && charCode < 123) || (charCode > 47 && charCode < 58))
+
+        return true;
+
+    return false;
+}
