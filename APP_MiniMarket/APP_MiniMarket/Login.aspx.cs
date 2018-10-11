@@ -12,6 +12,9 @@ namespace APP_MiniMarket
 {
     public partial class Login : System.Web.UI.Page
     {
+
+        Conexion db = new Conexion();
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -53,7 +56,7 @@ namespace APP_MiniMarket
         {
             try
             {
-
+                string sql = "";
                 DataSet1TableAdapters.UsuariosTableAdapter obj = new DataSet1TableAdapters.UsuariosTableAdapter();
                 String userPass = obj.login(txtUsuario.Text, txtContra.Text);
                 if (userPass != null)

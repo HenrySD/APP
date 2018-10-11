@@ -9,7 +9,7 @@
    <%--txtcodigo producto--%>
   <div class="form-row">
     <div class="form-group col-md-6">
-      <label for="inputEmail4">Codigo de producto</label>
+      <label for="text">Codigo de producto</label>
         <asp:TextBox ID="txtIDproducto" runat="server" class="form-control" placeholder="Ingrese ID del producto"></asp:TextBox>
       
     </div>
@@ -18,7 +18,7 @@
    <%-- txt cantidad--%>
     <div class="form-row">
     <div class="form-group col-md-6">
-      <label for="inputEmail4">Cantidad</label>
+      <label for="text">Cantidad</label>
         <asp:TextBox ID="txtCantidad" runat="server" class="form-control" placeholder="Ingrese cantidad"></asp:TextBox>
       
     </div>
@@ -27,7 +27,7 @@
     <%--txt fechavencimiento--%>
      <div class="form-row">
     <div class="form-group col-md-6">
-      <label for="inputEmail4">Fecha vencimiento</label>
+      <label for="text">Fecha vencimiento</label>
         <asp:TextBox ID="txtFechaVencimiento" runat="server" class="form-control"></asp:TextBox>
       
     </div>
@@ -36,7 +36,7 @@
    <%-- txtfecha creacion--%>
     <div class="form-row">
     <div class="form-group col-md-6">
-      <label for="inputEmail4">Fecha Creacion</label>
+      <label for="text">Fecha Creacion</label>
         <asp:TextBox ID="txtFechaCreacion" runat="server" class="form-control"></asp:TextBox>
       
     </div>
@@ -46,7 +46,7 @@
 
     <div class="form-row">
     <div class="form-group col-md-6">
-      <label for="inputEmail4">Precio Unitario</label>
+      <label for="text">Precio Unitario</label>
         <asp:TextBox ID="txtPrecioUnit" runat="server" class="form-control"></asp:TextBox>
       
     </div>
@@ -55,7 +55,7 @@
      <%--  txtproveedor--%>
     <div class="form-row">
     <div class="form-group col-md-6">
-      <label for="inputEmail4">Proveedor</label>
+      <label for="text">Proveedor</label>
         <asp:TextBox ID="txtProveedor" runat="server" class="form-control"></asp:TextBox>
       
     </div>
@@ -69,6 +69,6 @@
   </div>
 
   <%--<button type="submit" class="btn btn-primary"></button>--%>
-    <asp:Button ID="btnAgregarProduc" runat="server" Text="Agregar Producto" class="btn btn-primary" />
+    <asp:Button ID="btnAgregarProduc" runat="server" Text="Agregar Producto" class="btn btn-primary" OnClick="btnAgregarProduc_Click" />
 
 </asp:Content>

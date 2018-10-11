@@ -6,11 +6,8 @@
 
     <style>
         .holis {
-            display: none;
-            width: 100%;
-            margin-top: 0.25rem;
-            font-size: 80%;
-            color: #dc3545;
+            height:100px 10px 100px 10px;
+            
 
         }
 
@@ -24,22 +21,46 @@
         
         <div class="panel-heading">
 
-            <h3 class="auto-style1">Registrar Nuevo Usuario</h3>
+            <h3 class="auto-style1 text-left">Registrar Nuevo Usuario</h3>
         </div>
         <div class="row">
             <div>
-                <div class="col-md-5 mb-1">
-                        <asp:TextBox ID="TxtNombre" class="form-control input-sm" placeholder="Nombre" runat="server" required="" value=""></asp:TextBox>
+                <div class="col-md-5 mb-1 text-center">
+                    <asp:Label ID="Label1" runat="server" Text="Nombre"></asp:Label>
+                        <asp:TextBox ID="TxtNombre" class="form-control input-sm holis" placeholder="Nombre" runat="server" required="" value=""></asp:TextBox>
                 </div>
-                <div class="invalid-feedback">Ingrese Nombre</div>
                 
-                <div class="col-md-5 mb-1">
-                        <asp:TextBox ID="TextBox1" class="form-control input-sm" placeholder="Apellido" runat="server" required="" value=""></asp:TextBox>
+                
+                <div class="col-md-5 mb-1 text-center" >
+                    <asp:Label ID="Label2" runat="server" Text="Apellido" ></asp:Label>
+                        <asp:TextBox ID="TextBox1" class="form-control input-sm holis" placeholder="Apellido" runat="server" required="" value=""></asp:TextBox>
                 </div>
-                <div class="invalid-feedback">Ingrese Apellido</div>
+                
 
             </div>
         </div>
+
+        <div class="row">
+            <div>
+                <div class="col-md-5 mb-2 text-center">
+                    <asp:Label ID="Label3" runat="server" Text="Segundo"></asp:Label>
+                        <asp:TextBox ID="TextBox2" class="form-control input-sm" placeholder="Segundo" runat="server" required="" value=""></asp:TextBox>
+                </div>
+                
+                
+                <div class="col-md-5 mb-2 text-center">
+                    <asp:Label ID="Label4" runat="server" Text="priemr"></asp:Label>
+                        <asp:TextBox ID="TextBox3" class="form-control input-sm" placeholder="priemr" runat="server" required="" value=""></asp:TextBox>
+                </div>
+                
+
+            </div>
+        </div>
+
+
+
+
+
         <asp:Button ID="btnRegistrar" class="btn btn-primary" Text="Registrar" runat="server" OnClick="btnRegistrar_Click" type="submit" />
     </div>
         
