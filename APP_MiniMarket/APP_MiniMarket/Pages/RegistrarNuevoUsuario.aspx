@@ -4,64 +4,86 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <style>
-        .holis {
-            height:100px 10px 100px 10px;
-            
-
-        }
-
-
-
-
-    </style>
     
-    
-    <div class="container" novalidate="" runat="server" id="cosi">
+
+
+
+    <div class="auto-style1" novalidate="" runat="server" id="Cosi">
         
         <div class="panel-heading">
-
-            <h3 class="auto-style1 text-left">Registrar Nuevo Usuario</h3>
+            <center>
+            <h3 class="auto-style1">Registrar Nuevo Usuario</h3>
+                </center>
         </div>
+      
         <div class="row">
             <div>
-                <div class="col-md-5 mb-1 text-center">
-                    <asp:Label ID="Label1" runat="server" Text="Nombre"></asp:Label>
-                        <asp:TextBox ID="TxtNombre" class="form-control input-sm holis" placeholder="Nombre" runat="server" required="" value=""></asp:TextBox>
+                <div class="col-md-6 mb-1">
+                        <asp:TextBox ID="TxtNombre" class="form-control input-sm" placeholder="Nombre" runat="server" required="Ito puto" value=""></asp:TextBox>
                 </div>
+                <div class="invalid-feedback">Ingrese Nombre</div>
                 
-                
-                <div class="col-md-5 mb-1 text-center" >
-                    <asp:Label ID="Label2" runat="server" Text="Apellido" ></asp:Label>
-                        <asp:TextBox ID="TextBox1" class="form-control input-sm holis" placeholder="Apellido" runat="server" required="" value=""></asp:TextBox>
+                <div class="col-md-6 mb-1">
+                        <asp:TextBox ID="TextBox1" class="form-control input-sm" placeholder="Apellido" runat="server" required="" value=""></asp:TextBox>
                 </div>
+                <div class="invalid-feedback">Ingrese Apellido</div>
+
+            </div>         
+        </div>
+         <br />
+            
+              <div class="row">
+            <div>
+                <div class="col-md-6 mb-1">
+                        <asp:TextBox ID="TextPass" class="form-control input-sm" placeholder="Contraseña" runat="server" required="" value=""></asp:TextBox>
+                </div>
+                <div class="invalid-feedback">Ingrese Contraseña</div>
                 
+                <div class="col-md-6 mb-1">
+                        <asp:TextBox ID="TextComfirPass" class="form-control input-sm" placeholder="Comfirmar Contraseña" runat="server" required="" value=""></asp:TextBox>
+                </div>
+                <div class="invalid-feedback">Comfirmar Contraseña</div>
+
+            </div>
+        </div>
+           <br />
+            
+              <div class="row">
+            <div>
+                <div class="col-md-6 mb-1">
+                        <asp:TextBox ID="TextEmail" class="form-control input-sm" placeholder="Email" runat="server" required="" value=""></asp:TextBox>
+                </div>
+                <div class="invalid-feedback">Ingrese Email</div>
+                
+                <div class="col-md-6 mb-1">
+                        <asp:TextBox ID="TextBox3" class="form-control input-sm" placeholder=" Direccion" runat="server" required="" value=""></asp:TextBox>
+                </div>
+                <div class="invalid-feedback">Ingrese Direccion</div>
+
+            </div>
+        </div>
+          <br />
+            
+              <div class="row">
+            <div>
+                <div class="col-md-6 mb-1">
+                        <asp:TextBox ID="TextBox2" class="form-control input-sm" placeholder="Barrio" runat="server" required="" value=""></asp:TextBox>
+                </div>
+                <div class="invalid-feedback">Ingrese Barrio</div>
+                
+                <div class="col-md-6 mb-1">
+                        <asp:TextBox ID="TextBox4" class="form-control input-sm" placeholder="Numero de Casa" runat="server" required="" value=""></asp:TextBox>
+                </div>
+              
+                <div class="invalid-feedback">Ingrese Numero de Casa</div>
 
             </div>
         </div>
 
-        <div class="row">
-            <div>
-                <div class="col-md-5 mb-2 text-center">
-                    <asp:Label ID="Label3" runat="server" Text="Segundo"></asp:Label>
-                        <asp:TextBox ID="TextBox2" class="form-control input-sm" placeholder="Segundo" runat="server" required="" value=""></asp:TextBox>
-                </div>
-                
-                
-                <div class="col-md-5 mb-2 text-center">
-                    <asp:Label ID="Label4" runat="server" Text="priemr"></asp:Label>
-                        <asp:TextBox ID="TextBox3" class="form-control input-sm" placeholder="priemr" runat="server" required="" value=""></asp:TextBox>
-                </div>
-                
-
-            </div>
-        </div>
-
-
-
-
-
+         <br />
+        
         <asp:Button ID="btnRegistrar" class="btn btn-primary" Text="Registrar" runat="server" OnClick="btnRegistrar_Click" type="submit" />
+           
     </div>
         
     <script src="../Js/FuncionValidar.js"></script>
@@ -86,5 +108,8 @@
 
 
     </script>
+   
+
+
    
 </asp:Content>
