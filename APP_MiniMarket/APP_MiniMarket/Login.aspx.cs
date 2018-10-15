@@ -6,13 +6,14 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data.SqlClient;
 using System.Data;
+using System.Data.Sql;
 
 
 namespace APP_MiniMarket
 {
     public partial class Login : System.Web.UI.Page
     {
-
+        Conexion db = new Conexion();
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -21,53 +22,32 @@ namespace APP_MiniMarket
 
         protected void btnAcceder_Click(object sender, EventArgs e)
         {
-            try
-            {
-
-                DataSet1TableAdapters.UsuariosTableAdapter obj = new DataSet1TableAdapters.UsuariosTableAdapter();
-                String userPass = obj.login(txtUsuario.Text, txtContra.Text);
-                if (userPass != null)
-                {
-                    Session["Correo"] = userPass;
-                    Response.Redirect("Pages/Home.aspx");
-
-                }
-                else
-                {
-                    Response.Write("<script>alert('Usuario incorrecto')</script>");
-                
-                }
-
-            }
-            catch {
-
-
-
-            }
-                
-               
-            
+           
           
 
         }
 
         protected void btnAceptar_Click(object sender, EventArgs e)
         {
+            
             try
             {
+                SqlDataReader sql1;
+                String sql = "select Usuarios.Usuario, Usuarios.contraseña from Usuarios where Usuario='" + txtUsuario.Text + "' and Contraseña = '" + txtContra.Text + "' ";
+                db.consultar(sql);
+                sql1 = db.consultar(sql);
 
-                DataSet1TableAdapters.UsuariosTableAdapter obj = new DataSet1TableAdapters.UsuariosTableAdapter();
-                String userPass = obj.login(txtUsuario.Text, txtContra.Text);
-                if (userPass != null)
+
+                if (sql1.HasRows == true)
                 {
-                    Session["Correo"] = userPass;
+
                     Response.Redirect("Pages/Home.aspx");
 
                 }
                 else
                 {
-                    Response.Write("<script>alert('Usuario incorrecto')</script>");
 
+                    Response.Write("<script>alert('Usuario incorrecto')</script>");
                 }
 
             }

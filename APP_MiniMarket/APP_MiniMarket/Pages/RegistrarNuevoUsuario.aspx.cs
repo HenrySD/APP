@@ -16,7 +16,9 @@ namespace APP_MiniMarket.Pages
 
         protected void btnRegistrar_Click(object sender, EventArgs e)
         {
-
+            // crear registro con el nuevo usuario
+            // sacar ID del usuario que se acaba de crear
+            // crear el nuevo registro en la tabla direcciones con el ID del nuevo usuario
         }
     }
 }
